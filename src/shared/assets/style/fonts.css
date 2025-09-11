@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Proxima Nova regular';
+  src: url('../fonts/Proxima_Nova/proximanova_regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova light';
+  src: url('../fonts/Proxima_Nova/proximanova_light.otf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova bold';
+  src: url('../fonts/Proxima_Nova/proximanova_bold.otf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova extrabold';
+  src: url('../fonts/Proxima_Nova/proximanova_extrabold.otf');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova black';
+  src: url('../fonts/Proxima_Nova/proximanova_black.ttf');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova blackit';
+  src: url('../fonts/Proxima_Nova/proximanova_blackit.otf');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Proxima Nova boldit';
+  src: url('../fonts/Proxima_Nova/proximanova_boldit.otf');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Bank';
+  src: url('../fonts/Bank_Gothic/Bank_Gothic_Medium.ttf');
+  font-weight: 500;
+  font-style: medium;
+}
