@@ -1,4 +1,4 @@
-@import url('@shared/assets/style/fonts.css');
+@import '@/shared/styles/fonts.css';
 
 :root {
     --bg: #ffffff;
