@@ -1,6 +1,6 @@
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import { createPortal } from "react-dom";
-import { useTheme } from "../../app/providers/theme";
+import { useTheme } from "@/app/providers/theme";
 
 const DEFAULT_PHRASES = [
   "<div>", "</div>", "<span>", "</span>", "<button>", "<input>", "<form>", "<img />",
@@ -53,50 +53,53 @@ export default function FallingCodeBackground({
     });
   }, [density, phrases, speedRange, theme]);
 
-  return createPortal(
+  return(
     <div
       style={{
-        position: "fixed",
+        position: "absolute",
         inset: 0,
-        zIndex: -1,
+        zIndex: 0,              // под контентом Intro
         overflow: "hidden",
         pointerEvents: "none",
         background: "transparent",
       }}
     >
-      <div style={{ position: "absolute", inset: "-20vh" }}>
-        {items.map((it) => (
-          <span
-            key={it.id}
-            style={{
-              position: "absolute",
-              left: `${it.x}vw`,
-              top: `-20vh`,
-              fontSize: it.fontSize,
-              fontWeight: it.weight,
-              color: it.color,
-              opacity: it.opacity,
-              whiteSpace: "nowrap",
-              display: "inline-block",
-              transform: `scale(${it.scale})`,
-              filter: `blur(${it.blurPx}px)`,
-              textShadow: theme === "dark" ? `0 0 10px ${it.color}40, 0 0 22px ${it.color}30` : "none",
-            }}
-          >
-            <span
-              style={{
-                display: "inline-block",
-                animation: `codeFall ${it.duration}s linear ${it.delay}s infinite`,
-                transformOrigin: "50% 50%",
-              }}
-            >
-              {it.text}
-            </span>
-          </span>
-        ))}
-      </div>
+    < div style = {{ position: "absolute", inset: "-20vh" }
+}>
+{
+  items.map((it) => (
+    <span
+      key={it.id}
+      style={{
+        position: "absolute",
+        left: `${it.x}vw`,
+        top: `-20vh`,
+        fontSize: it.fontSize,
+        fontWeight: it.weight,
+        color: it.color,
+        opacity: it.opacity,
+        whiteSpace: "nowrap",
+        display: "inline-block",
+        transform: `scale(${it.scale})`,
+        filter: `blur(${it.blurPx}px)`,
+        textShadow: theme === "dark" ? `0 0 10px ${it.color}40, 0 0 22px ${it.color}30` : "none",
+      }}
+    >
+      <span
+        style={{
+          display: "inline-block",
+          animation: `codeFall ${it.duration}s linear ${it.delay}s infinite`,
+          transformOrigin: "50% 50%",
+        }}
+      >
+        {it.text}
+      </span>
+    </span>
+  ))
+}
+      </div >
 
-      <style>{`
+  <style>{`
 @keyframes codeFall {
   0%   { transform: translate3d(0, -120vh, 0); opacity: 0; }
   8%   { opacity: 1; }
@@ -104,7 +107,7 @@ export default function FallingCodeBackground({
   100% { transform: translate3d(0,  140vh, 0); opacity: 0; }
 }
     `}</style>
-    </div>,
-    document.body
+    </div >,
+  document.body
   );
 }
