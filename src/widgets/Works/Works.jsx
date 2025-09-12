@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import WorkCard from "@/entities/work/ui/WorkCard.jsx";
+import WorkCard from "@/entities/work/ui/WorkCard";
 import { getRepos } from "@/shared/lib/github.js";
 import { mapRepoToWork } from "@/entities/work/model/mapRepoToWork.js";
 
