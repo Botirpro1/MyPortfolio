@@ -7,6 +7,7 @@ export default function Intro() {
       <div className="relative z-10 text-center">
         <img src={assets.IconStrategix} style={{width: "1200px"}} alt="Me" />
         <p className="mt-4 text-lg text-white/70" >Frontend — magic. Graphic — power.</p>
+        <h1 className="text-5xl md:text-7xl font-bold text-red-500">Isbekov Botir</h1>
       </div>
     </section>
   )

@@ -1,3 +1,4 @@
+
 import useScrollSpy from "@/shared/hooks/useScrollSpy"
 
 const NAV_HEIGHT = 72 // высота хедера в px (подгони под свой)
