@@ -23,7 +23,7 @@ export default function NavBar() {
 
   return (
     <header className="sticky top-0 z-40 h-[72px] backdrop-blur bg-black/40 border-b border-white/5">
-      <div className="max-w-6xl mx-auto h-full flex items-center justify-between px-6">
+      <div className="max-w-6xl mx-auto h-full flex items-center justify-between px-6 container">
         {/* слева — лого */}
         {/* <img src={assets.Logo} className="h-6" alt="logo" /> */}
 
