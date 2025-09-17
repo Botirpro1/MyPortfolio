@@ -4,17 +4,50 @@ import assets from "@/shared/assets/index"
 
 export default function Intro() {
   return (
-    <section className="relative mi n-h-[90vh] flex flex-col items-center justify-center overflow-hidden">
-      <FallingCodeBackground density={0.85} speed={1} phrasesPreset="react" />
+    <section className="relative min-h-screen overflow-hidden flex items-center justify-center">
 
-      <div className="relative z-10 text-center px-6">
-        <img src={assets.IconStrategix} alt="logo" className="mx-auto w-[240px] md:w-[360px]" />
-        <p className="mt-6 text-base md:text-lg text-white/70">Frontend — magic. Graphic — power.</p>
 
-        <div className="mt-8 flex items-center justify-center gap-3">
-          <Button as="a" href="#frontend" size="lg">View Works</Button>
-          <Button as="a" href="#contact" variant="outline" size="lg">Contact</Button>
-        </div>
+
+      <FallingCodeBackground
+        background="transparent"
+        density={0.8}
+        lineHeight={1.3}
+        spawnEveryMs={220}
+        decayMs={1800}
+        fontSize={22}
+        opacity={0.35}
+        tailMax={26}
+        symbols={[
+          "<div>", "</div>", "<span>", "</span>", "<button>", "<input>", "<form>", "<img />",
+          "<a>", "</a>", "className", "id", "href", "src", "alt", "title",
+          "onClick", "onChange", "value", "placeholder", "return", "const", "let", "import",
+          "export", "async", "await", "fetch()", "try {} catch {}", "map()", "filter()",
+          "JSON", "true", "false", "null", "undefined",
+          "color:", "background:", "display: flex", "gap:", "padding:", "margin:", "border:",
+          "width:", "height:", "z-index", "position: fixed", "top: 0", "left: 0", "right: 0", "bottom: 0",
+          "/home", "/about", "/login", "useMemo(() =>", "useState()", "useEffect(() =>",
+          "redux", "context", "props", "children", "{props}", "<Component />", "e.target.value",
+          "for()", "while()", "if() {}", "else {}", "switch() {}", "case", "break", "continue",
+          "console.log()", "git push", "git commit -m", "npm i", "yarn add", "npm run dev", "npx create-react-app",
+        ]}
+      />
+      <FallingCodeBackground
+        background="transparent"
+        density={0.8}
+        lineHeight={1.3}
+        spawnEveryMs={220}
+        decayMs={1800}
+        fontSize={22}
+        opacity={0.35}
+        tailMax={26}
+        symbols={[
+          "1", "0"
+        ]}
+      />
+
+      <div className="relative z-10 text-center">
+        <img src={assets.IconStrategix} className="mx-auto w-[700px]" alt="logo" />
+        <p className="mt-4 text-lg text-white/70">Frontend — magic. Graphic — power.</p>
       </div>
 
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black" />
