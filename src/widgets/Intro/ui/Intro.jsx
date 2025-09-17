@@ -14,7 +14,7 @@ export default function Intro() {
         lineHeight={1.3}
         spawnEveryMs={220}
         decayMs={1800}
-        fontSize={22}
+        fontSize={12}
         opacity={0.35}
         tailMax={26}
         symbols={[
@@ -33,13 +33,13 @@ export default function Intro() {
       />
       <FallingCodeBackground
         background="transparent"
-        density={0.8}
-        lineHeight={1.3}
-        spawnEveryMs={220}
+        density={1.4}
+        lineHeight={1.5}
+        spawnEveryMs={200}
         decayMs={1800}
-        fontSize={22}
+        fontSize={7}
         opacity={0.35}
-        tailMax={26}
+        tailMax={40}
         symbols={[
           "1", "0"
         ]}

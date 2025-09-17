@@ -1,4 +1,4 @@
-
+import ThemeButton from "@/features/theme-toggle/ThemeToggle"
 import useScrollSpy from "@/shared/hooks/useScrollSpy"
 
 const NAV_HEIGHT = 72 // высота хедера в px (подгони под свой)
@@ -22,12 +22,8 @@ export default function NavBar() {
   }
 
   return (
-    <header className="sticky top-0 z-40 h-[72px] backdrop-blur bg-black/40 border-b border-white/5">
-      <div className="max-w-6xl mx-auto h-full flex items-center justify-between px-6 container">
-        {/* слева — лого */}
-        {/* <img src={assets.Logo} className="h-6" alt="logo" /> */}
-
-        <nav className="flex items-center gap-8">
+    <header className="flex items-center justify-center top-0 z-40 h-[72px] backdrop-blur">
+        <nav className="flex items-center justify-between gap-8">
           {SECTIONS.map(({ id, label }) => {
             const isActive = active === id
             return (
@@ -46,11 +42,9 @@ export default function NavBar() {
               </a>
             )
           })}
+          <ThemeButton />
         </nav>
-
-        {/* справа — переключатель темы/что-то ещё */}
-        {/* <ThemeButton /> */}
-      </div>
+      
     </header>
   )
 }
