@@ -1,0 +1,52 @@
+/* 
+html, body {
+  
+  scrollbar-width: none;
+}
+
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+#root.scrollbar-none,
+#__next.scrollbar-none {          
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+#root.scrollbar-none::-webkit-scrollbar,
+#__next.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+.scrollbar-none {
+  -ms-overflow-style: none;   
+  scrollbar-width: none;      
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;              
+}
+
+
+.simple-scrollbar {
+  position: fixed;
+  right: 16px;       
+  top: 80px;         
+  bottom: 16px;      
+  width: 6px;        
+  pointer-events: none; 
+}
+
+.simple-scrollbar-thumb {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  background: #9aa0a6;  
+  opacity: 0.9;
+  border-radius: 0;     
+  transition: transform 0.2s linear, height 0.2s linear;
+} */

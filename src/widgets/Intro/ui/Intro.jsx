@@ -9,8 +9,8 @@ export default function Intro() {
 
 
       <FallingCodeBackground
-        background="transparent"
-        density={0.8}
+        background="var(--bg)"
+        density={1.8}
         lineHeight={1.3}
         spawnEveryMs={220}
         decayMs={1800}
@@ -33,19 +33,19 @@ export default function Intro() {
       />
       <FallingCodeBackground
         background="transparent"
-        density={1.4}
+        density={1.9}
         lineHeight={1.5}
         spawnEveryMs={200}
-        decayMs={1800}
-        fontSize={7}
+        decayMs={18000}
+        fontSize={10}
         opacity={0.35}
-        tailMax={40}
+        tailMax={100}
         symbols={[
           "1", "0"
         ]}
       />
 
-      <div className="relative z-10 text-center">
+      <div className="relative z-10 text-center p-10">
         <img src={assets.IconStrategix} className="mx-auto w-[700px]" alt="logo" />
         <p className="mt-4 text-lg text-white/70">Frontend — magic. Graphic — power.</p>
       </div>

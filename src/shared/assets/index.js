@@ -1,4 +1,6 @@
 
+
+// Icons
 import IconDribbble from "./icons/Dribble.svg"
 import IconFacebook from "./icons/Facebook.svg"
 import IconFavicon from "./icons/favicon.ico"
@@ -9,7 +11,8 @@ import IconTelegram from "./icons/telegram.svg"
 import IconVK from "./icons/VK.svg"
 import IconStrategix from "./icons/logo.svg"
 
-import ImgMe from "./images/me.png"
+// Images
+import Hero from "./images/Hero.png"
 
 const assets = {
   IconDribbble,
@@ -20,8 +23,8 @@ const assets = {
   IconLinkedIn,
   IconTelegram,
   IconVK,
-  ImgMe,
-  IconStrategix
+  IconStrategix,
+  Hero
 }
 
 export default assets

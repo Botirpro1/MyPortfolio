@@ -46,9 +46,28 @@
   font-weight: 700;
   font-style: italic;
 }
+
 @font-face {
   font-family: 'Bank';
   src: url('../fonts/Bank_Gothic/Bank_Gothic_Medium.ttf');
   font-weight: 500;
   font-style: medium;
+}
+
+@font-face {
+  font-family: 'Jost Light';
+  font-weight: 300;
+  src: url('../fonts/Jost/Jost-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Jost Medium';
+  font-weight:500;
+  src: url('../fonts/Jost/Jost-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Jost Regular';
+  font-weight: 400;
+  src: url('../fonts/Jost/Jost-VariableFont_wght.ttf');
 }

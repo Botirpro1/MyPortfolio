@@ -1,7 +1,7 @@
 import { useTheme } from "@/app/providers/theme";
 import styled from "styled-components";
 
-export default function ThemeToggle() {
+export default function ThemeToggle({ size = 44 }) {
   const { theme, setTheme } = useTheme();
   const isDark = theme === "dark";
 
@@ -10,7 +10,7 @@ export default function ThemeToggle() {
   };
 
   return (
-    <StyledWrapper>
+    <StyledWrapper size={size}>
       <label
         htmlFor="themeToggle"
         className="themeToggle st-sunMoonThemeToggleBtn"
@@ -43,7 +43,7 @@ export default function ThemeToggle() {
   );
 }
 
-const StyledWrapper = styled.div`
+const StyledWrapper = styled.div` 
   /* a clone from joshwcomeau.com 
    * but this version runs on pure CSS
    */
@@ -56,8 +56,8 @@ const StyledWrapper = styled.div`
     position: relative;
     cursor: pointer;
     display: inline-block;
-    width: 44px;
-    height: 44px;
+    width: ${({ size }) => size}px;
+    height: ${({ size }) => size}px;
     vertical-align: middle;
   }
 
