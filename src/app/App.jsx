@@ -6,7 +6,10 @@ function App() {
   return (
     <>
       <NavBar />
-
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
     </>
   );
 }
