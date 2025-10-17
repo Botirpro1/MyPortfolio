@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react"
 import ThemeToggle from "@/features/theme-toggle/ThemeToggle"
 import useScrollSpy from "@/shared/hooks/useScrollSpy"
 
-const NAV_HEIGHT = 72
+const NAV_HEIGHT = 100
 
 const SECTIONS = [
   { id: "about", label: "About me" },
@@ -88,7 +88,7 @@ export default function NavBar() {
             "--u-width": `${underline.width}px`,
           }}
         />
-        <ThemeToggle size={30} />
+        {/* <ThemeToggle size={30} /> */}
       </nav>
     </header>
   )

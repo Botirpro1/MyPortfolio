@@ -7,16 +7,15 @@ export default function Intro() {
     <section className="relative min-h-screen overflow-hidden flex items-center justify-center">
 
 
-
-      <FallingCodeBackground
-        background="var(--bg)"
-        density={1.8}
-        lineHeight={1.3}
-        spawnEveryMs={220}
-        decayMs={1800}
-        fontSize={12}
+      {/* <FallingCodeBackground
+        background="transparent"
+        density={0.1}
+        lineHeight={1.5}
+        spawnEveryMs={200}
+        decayMs={18000}
+        fontSize={10}
         opacity={0.35}
-        tailMax={26}
+        tailMax={100}
         symbols={[
           "<div>", "</div>", "<span>", "</span>", "<button>", "<input>", "<form>", "<img />",
           "<a>", "</a>", "className", "id", "href", "src", "alt", "title",
@@ -30,7 +29,7 @@ export default function Intro() {
           "for()", "while()", "if() {}", "else {}", "switch() {}", "case", "break", "continue",
           "console.log()", "git push", "git commit -m", "npm i", "yarn add", "npm run dev", "npx create-react-app",
         ]}
-      />
+      /> */}
       <FallingCodeBackground
         background="transparent"
         density={1.9}

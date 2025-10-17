@@ -1,7 +1,6 @@
-@import "fonts.css";
+@import "./fonts.css";
 @import "tailwindcss";
-@import "scroll.css";
-
+@import "./scroll.css";
 
 :root {
     --bg: #ffffff;
