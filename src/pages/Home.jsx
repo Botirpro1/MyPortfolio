@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Intro />
-      
+
 {/* 
       <section id="about" className="scroll-mt-[72px] min-h-screen px-6">
         <div className="about__content container flex gap-8 pt-100">
@@ -33,6 +33,7 @@ export default function Home() {
       <section id="frontend" className="scroll-mt-[72px] min-h-screen px-6 py-24 container">
         {/* ...Frontend development... */}
         <FitTitle className="text-white">FRONTEND — DEVELOPING</FitTitle>
+        <p>Kablov kabil kabilovish</p>
         <Works />
       </section>
 
